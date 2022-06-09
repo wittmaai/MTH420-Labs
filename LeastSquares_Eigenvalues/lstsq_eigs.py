@@ -40,7 +40,7 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
-    housing = np.load("/Users/aidan/OneDrive/Desktop/.vscode/housing.npy") #Change the path to whatever housing.npy becomes: it only works for me with this type of path. /Users/<name>/ etc.
+    housing = np.load("housing.npy") #Change the path to whatever housing.npy becomes: it only works for me with this type of path. /Users/<name>/ etc.
     print(housing)
     x = housing[:,0]
     y = housing[:,1]
@@ -67,7 +67,7 @@ def polynomial_fit():
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
-    housing = np.load("/Users/aidan/OneDrive/Desktop/.vscode/housing.npy") #Change the path to whatever housing.npy becomes: it only works for me with this type of path. /Users/<name>/ etc.
+    housing = np.load("housing.npy") #Change the path to whatever housing.npy becomes: it only works for me with this type of path. /Users/<name>/ etc.
     xh = housing[:,0]
     yh = housing[:,1]
     B = np.empty((33,1))

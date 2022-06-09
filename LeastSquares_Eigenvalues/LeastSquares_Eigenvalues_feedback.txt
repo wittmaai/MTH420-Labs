@@ -1,0 +1,26 @@
+06/09/22 19:30
+
+FileNotFoundError while loading 'lstsq_eigs.py': [Errno 2] No such file or directory: '/Users/aidan/OneDrive/Desktop/.vscode/housing.npy'
+
+-------------------------------------------------------------------------------
+
+06/09/22 19:40
+
+Problem 1 (15 points):
+Score += 15
+
+Problem 2 (15 points):
+Score += 15
+
+Problem 3 (15 points):
+Score += 15
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+
