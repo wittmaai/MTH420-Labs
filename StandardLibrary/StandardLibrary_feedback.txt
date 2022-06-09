@@ -1,0 +1,6 @@
+06/09/22 19:23
+
+AttributeError while loading 'standard_library.py': module 'calculator' has no attribute 'squarey'
+
+-------------------------------------------------------------------------------
+
