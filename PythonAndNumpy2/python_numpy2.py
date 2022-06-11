@@ -14,7 +14,7 @@ def isolate(a, b, c, d, e):
     space between the last two. This is accomplished using
     the built-in sep and end functions within the print function.
     """
-    print(a, b, c, sep="   ", end=" ")
+    print(a, b, c, sep="     ", end=" ")
     print(d, e)
     return()
     raise NotImplementedError("Problem 1 Incomplete")
@@ -48,14 +48,15 @@ def list_ops():
     Return the resulting list.
     """
     animals = ["bear", "ant", "cat", "dog"]
+    animals[2] = "fox"
     animals.append("eagle")
     animals.pop(1)
     animals.sort()
     animals.reverse()
-    animals[0] = "hawk"
+    animals[1] = "hawk"
     animals[3] = animals[3] + "hunter"
-    print(animals) #This should be [hawk, dog, cat, bearhunter].
-    return()
+    #print(animals) #This should be [fox, hawk, dog, bearhunter].
+    return(animals)
     raise NotImplementedError("Problem 3 Incomplete")
 
 #Problem 4
@@ -79,10 +80,11 @@ def prob5(A):
         >>> prob4(A)
         array([0, 0, 3])
     """
-    mask = A < 0
-    A[mask] = 0
-    print(A)
-    return()
+    Acopy = np.copy(A)
+    mask = Acopy < 0
+    Acopy[mask] = 0
+    #print(Acopy)
+    return(Acopy)
     raise NotImplementedError("Problem 5 Incomplete")
 
 def prob6():
@@ -106,8 +108,8 @@ def prob6():
     row2 = np.hstack((A,zero2,zero3))
     row3 = np.hstack((B,zero4,C))
     final = np.vstack((row1,row2,row3))
-    print(final)
-    return()
+    #print(final)
+    return(final)
     raise NotImplementedError("Problem 6 Incomplete")
 
 def prob7(A):
@@ -145,13 +147,16 @@ def main():
     b = backward(prob2string)
     print("First Half:", fh, "\nBackward:", b, "\n")
 
-    list_ops()
+    thing = list_ops()
+    print('THING!!!', thing)
 
     altharmonicnumber = int(input('Enter the number of terms of the alternating harmonic series you would like to sum: '))
     alt_harmonic(altharmonicnumber)
 
     prob5matrix = np.array([[1,2,-3],[4,5,-6],[-7,8,-9]])
-    prob5(prob5matrix)
+    A = prob5(prob5matrix)
+    print(A)
 
-    prob6()
+    monster = prob6()
+    print(monster)
 main()
