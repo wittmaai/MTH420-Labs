@@ -24,3 +24,9 @@ Excellent!
 
 -------------------------------------------------------------------------------
 
+06/14/22 00:12
+
+ValueError while loading 'lstsq_eigs.py': On entry to DGEQRF parameter number 4 had an illegal value
+
+-------------------------------------------------------------------------------
+
